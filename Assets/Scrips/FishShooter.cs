@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Net.Sockets;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
@@ -8,24 +9,37 @@ public class FishShooter : MonoBehaviour
     private Rigidbody2D rb;
 
     [SerializeField] private GameObject WaterShotPrefab;
-    [SerializeField] private float fireRate = 1f;
-    [SerializeField] private float kickback = 100f;
-    [SerializeField] private float spawnDistance = 1.5f;
+    [SerializeField] private float fireRate = 50f;
+    [SerializeField] private float kickback = 5f;
+    [SerializeField] private float spawnDistance = 1.2f;
+    [SerializeField] private float executionTime = 0.1f;
+
 
     private float nextFireTime = 0f;
 
-    private bool IsShooting = false;
+    [SerializeField] private bool IsShooting = false;
+    private bool hasStartedShooting = false;
 
     GameObject waterShot;
 
     void Start()
     {
-        Fish = gameObject.GetComponent<Fish>(); 
+        rb = GetComponent<Rigidbody2D>();
+        Fish = gameObject.GetComponent<Fish>();
     }
-
     void Update()
     {
-        rb = GetComponent<Rigidbody2D>();
+
+        if (Fish.state == PlayerState.flying && IsShooting == true)
+        {
+            Fish.state = PlayerState.falling;
+            Shoot();
+            nextFireTime = Time.time + 1f / fireRate;
+        }
+        else if (IsShooting == true)
+        {
+            Shoot();
+        }
     }
 
     private void Shoot() // shoot projectile and delay function
@@ -54,28 +68,44 @@ public class FishShooter : MonoBehaviour
             Destroy(tempObj);
 
 
-            nextFireTime = Time.time + 0.1f / fireRate;
         }
         
         Destroy(waterShot, 0.5f);
-
     }
 
     
 
     public void OnAttack() //set bool to false so shooting can be used
     {
-        IsShooting = !IsShooting;
-        if (Fish.state == PlayerState.flying)
+        if (!hasStartedShooting) // Start shooting if it's not already active
         {
-            Fish.state = PlayerState.falling;
-            Shoot();
+            IsShooting = true;
+            hasStartedShooting = true;
+            StartCoroutine(ExecuteForTime(executionTime));
         }
         else
         {
-            Shoot();
+            IsShooting = false; // Stop shooting if it's already active
         }
-        //Debug.Log("OnAtack activated/deactivated");
-        
+    }
+
+    IEnumerator ExecuteForTime(float duration)
+    {
+        float timer = 0f;
+
+        while (timer < duration)
+        {
+            if (IsShooting)
+            {
+                Shoot(); // Keep shooting within the time frame
+            }
+            timer += Time.deltaTime;
+            yield return null; // Wait for the next frame
+        }
+
+        IsShooting = false; // Stop shooting after the execution time ends
+        hasStartedShooting = false;
+        Debug.Log("Execution time ended.");
     }
 }
+
