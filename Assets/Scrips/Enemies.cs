@@ -2,15 +2,32 @@ using UnityEngine;
 
 public class Enemies : MonoBehaviour
 {
+    private Animator animator;
+    private float attackTimer = 0;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Time.time > attackTimer)
+        {
+            Debug.Log("attacking");
+            animator.SetTrigger("Attack");
+            attackTimer = Time.time + 3f;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Player"))
+        {
+            Rigidbody2D playerRb = collision.collider.GetComponent<Rigidbody2D>();
+            playerRb.AddForce(new Vector2(-500,0));
+        }
     }
 }

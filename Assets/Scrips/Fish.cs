@@ -15,8 +15,6 @@ public class Fish : MonoBehaviour
     public PlayerState state;
     public Animator animator;
 
-
-
     public float walkSpeed = 5f;
 
     void Start()
@@ -27,10 +25,10 @@ public class Fish : MonoBehaviour
 
     void Update()
     {
-        bool isFlying = (state == PlayerState.flying) ? true : false;
-        bool isFalling = (state == PlayerState.falling) ? true : false;
-        bool isWalking = (state == PlayerState.walking) ? true : false;
-        bool finished = (state == PlayerState.finish) ? true : false;
+        bool isFlying = (state == PlayerState.flying);
+        bool isFalling = (state == PlayerState.falling);
+        bool isWalking = (state == PlayerState.walking);
+        bool finished = (state == PlayerState.finish);
 
         animator.SetBool("Flying", isFlying);
         animator.SetBool("Falling", isFalling);

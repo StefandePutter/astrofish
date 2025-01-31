@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: dabffcbff867b274d8a2bf63a7c04846
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 726415510139186105
+    second: vogel_animatie_0
+  - first:
+      213: 6514273792640977908
+    second: vogel_animatie_1
+  - first:
+      213: 3540030503293856667
+    second: vogel_animatie_2
+  - first:
+      213: 6237974378240345213
+    second: vogel_animatie_3
+  - first:
+      213: 3632874497625067250
+    second: vogel_animatie_4
+  - first:
+      213: -3356474867354808322
+    second: vogel_animatie_5
+  - first:
+      213: -659558175773022059
+    second: vogel_animatie_6
+  - first:
+      213: 6342035494907798578
+    second: vogel_animatie_7
+  - first:
+      213: -3409673974218544101
+    second: vogel_animatie_8
+  - first:
+      213: 1638097649045619583
+    second: vogel_animatie_9
+  - first:
+      213: 5254594961570969335
+    second: vogel_animatie_10
+  - first:
+      213: -5202640148701447863
+    second: vogel_animatie_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: vogel_animatie_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 269
+        width: 251
+        height: 231
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bb2e29ce0fb41a00800000000000000
+      internalID: 726415510139186105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vogel_animatie_1
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 274
+        width: 251
+        height: 226
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fb80041089576a50800000000000000
+      internalID: 6514273792640977908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vogel_animatie_2
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 274
+        width: 241
+        height: 226
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9ba0e2acf6b02130800000000000000
+      internalID: 3540030503293856667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vogel_animatie_3
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 274
+        width: 251
+        height: 226
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d74010595acb19650800000000000000
+      internalID: 6237974378240345213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vogel_animatie_4
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 274
+        width: 250
+        height: 226
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fe84889b109a6230800000000000000
+      internalID: 3632874497625067250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vogel_animatie_5
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 289
+        width: 292
+        height: 211
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eff4ac934e76b61d0800000000000000
+      internalID: -3356474867354808322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vogel_animatie_6
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 289
+        width: 327
+        height: 198
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59828586557c8d6f0800000000000000
+      internalID: -659558175773022059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vogel_animatie_7
+      rect:
+        serializedVersion: 2
+        x: 1857
+        y: 309
+        width: 359
+        height: 191
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 234e5ea5eaf630850800000000000000
+      internalID: 6342035494907798578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vogel_animatie_8
+      rect:
+        serializedVersion: 2
+        x: 2252
+        y: 315
+        width: 378
+        height: 180
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1c2fcee5976ea0d0800000000000000
+      internalID: -3409673974218544101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vogel_animatie_9
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 59
+        width: 359
+        height: 192
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7344cef121bbb610800000000000000
+      internalID: 1638097649045619583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vogel_animatie_10
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 53
+        width: 328
+        height: 198
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f6befa07421ce840800000000000000
+      internalID: 5254594961570969335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vogel_animatie_11
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 53
+        width: 292
+        height: 218
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 949f67a79528cc7b0800000000000000
+      internalID: -5202640148701447863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3a7083b8a3824544dbc7878dbe19f42e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      vogel_animatie_0: 726415510139186105
+      vogel_animatie_1: 6514273792640977908
+      vogel_animatie_10: 5254594961570969335
+      vogel_animatie_11: -5202640148701447863
+      vogel_animatie_2: 3540030503293856667
+      vogel_animatie_3: 6237974378240345213
+      vogel_animatie_4: 3632874497625067250
+      vogel_animatie_5: -3356474867354808322
+      vogel_animatie_6: -659558175773022059
+      vogel_animatie_7: 6342035494907798578
+      vogel_animatie_8: -3409673974218544101
+      vogel_animatie_9: 1638097649045619583
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

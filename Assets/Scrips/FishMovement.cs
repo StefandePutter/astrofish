@@ -19,12 +19,12 @@ public class FishMovement : MonoBehaviour
 
         if (fish.state == PlayerState.walking)
         {
-            if (moveValue != Vector2.zero)
-            {
-                transform.Translate(fish.walkSpeed * Time.deltaTime * moveValue, Space.World);
-            }
+            
         }
-        
+        if (moveValue != Vector2.zero)
+        {
+            transform.Translate(fish.walkSpeed * Time.deltaTime * moveValue, Space.World);
+        }
     }
 
     public void OnMove(InputValue value)
