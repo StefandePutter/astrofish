@@ -9,7 +9,7 @@ public class CameraMovement : MonoBehaviour
     [SerializeField] private GameObject player;
     void Update()
     {
-        Vector3 targetPosition = new Vector3(transform.position.x, player.transform.position.y+4, transform.position.z);
+        Vector3 targetPosition = new Vector3(transform.position.x, player.transform.position.y+3.5, transform.position.z);
         transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
     }
 }
