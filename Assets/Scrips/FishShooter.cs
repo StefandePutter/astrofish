@@ -6,11 +6,16 @@ public class FishShooter : MonoBehaviour
 {
     private Fish Fish;
     private Rigidbody2D rb;
+
     [SerializeField] private GameObject WaterShotPrefab;
     [SerializeField] private float fireRate = 1f;
-    [SerializeField] private float spawnDistance = 1000f;
-    // [SerializeField] private Transform firepoint;
+    [SerializeField] private float kickback = 100f;
+    [SerializeField] private float spawnDistance = 1.5f;
+
     private float nextFireTime = 0f;
+
+    private bool IsShooting = false;
+
     GameObject waterShot;
 
     void Start()
@@ -39,24 +44,28 @@ public class FishShooter : MonoBehaviour
 
             temp.up = direction;
 
-            waterShot = Instantiate(WaterShotPrefab, temp.position, temp.rotation);
+            Vector3 spawnPosition = transform.position + temp.up * spawnDistance;
+
+            waterShot = Instantiate(WaterShotPrefab, spawnPosition, temp.rotation);
 
             // adding force
-            rb.AddForce(-direction*70);
+            rb.AddForce(-temp.up*kickback);
             
             Destroy(tempObj);
 
 
-            nextFireTime = Time.time + 1f / fireRate;
+            nextFireTime = Time.time + 0.1f / fireRate;
         }
         
-        Debug.Log("Attack towards: " + Fish.mousePos);
-
+        Destroy(waterShot, 0.5f);
 
     }
 
+    
+
     public void OnAttack() //set bool to false so shooting can be used
     {
+        IsShooting = !IsShooting;
         if (Fish.state == PlayerState.flying)
         {
             Fish.state = PlayerState.falling;
@@ -66,7 +75,7 @@ public class FishShooter : MonoBehaviour
         {
             Shoot();
         }
-        Debug.Log(Time.time);
-
+        //Debug.Log("OnAtack activated/deactivated");
+        
     }
 }

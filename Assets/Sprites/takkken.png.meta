@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      takkken_0: 5349123717751524650
+      takkken_1: -2177892943707932831
+      takkken_2: -1902192307647473545
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
