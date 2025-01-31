@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bergen_0: 5899425838014906158
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

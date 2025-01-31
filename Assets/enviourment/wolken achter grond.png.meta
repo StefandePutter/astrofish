@@ -322,7 +322,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      wolken achter grond_0: -276525434786760669
+      wolken achter grond_1: 5367219438732390115
+      wolken achter grond_2: -8030849916543724771
+      wolken achter grond_3: -139167282159055796
+      wolken achter grond_4: -1550631602551814466
+      wolken achter grond_5: -1226939568418149310
+      wolken achter grond_6: 3360307420823898332
+      wolken achter grond_7: 6273936988576239897
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

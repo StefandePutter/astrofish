@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      steen_2_0: 5967620439181744160
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
