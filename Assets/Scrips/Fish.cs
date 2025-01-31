@@ -13,17 +13,29 @@ public class Fish : MonoBehaviour
 {
     [HideInInspector] public Vector2 mousePos;
     public PlayerState state;
+    public Animator animator;
+
+
 
     public float walkSpeed = 5f;
 
     void Start()
     {
         state = PlayerState.walking;
+        animator = GetComponent<Animator>();
     }
 
     void Update()
     {
-        
+        bool isFlying = (state == PlayerState.flying) ? true : false;
+        bool isFalling = (state == PlayerState.falling) ? true : false;
+        bool isWalking = (state == PlayerState.walking) ? true : false;
+        bool finished = (state == PlayerState.finish) ? true : false;
+
+        animator.SetBool("Flying", isFlying);
+        animator.SetBool("Falling", isFalling);
+        animator.SetBool("Walking", isWalking);
+        animator.SetBool("Finish", finished);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
