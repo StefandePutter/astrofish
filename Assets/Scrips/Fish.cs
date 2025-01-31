@@ -40,6 +40,11 @@ public class Fish : MonoBehaviour
     {
         if (collision.collider.CompareTag("Walkable"))
         {
+            if (state == PlayerState.flying)
+            {
+                state = PlayerState.falling;
+            }
+
             if (state == PlayerState.falling) 
             { 
                 state = PlayerState.walking;
