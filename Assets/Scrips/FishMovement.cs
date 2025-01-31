@@ -3,6 +3,7 @@ using UnityEngine.InputSystem;
 
 public class FishMovement : MonoBehaviour
 {
+    [SerializeField] private float gravityScale = 1;
     private Fish fish;
     private Vector2 moveValue;
     private Rigidbody2D rb;
@@ -15,7 +16,7 @@ public class FishMovement : MonoBehaviour
 
     void Update()
     {
-        rb.gravityScale = fish.state == PlayerState.flying ? -1 : 1;
+        rb.gravityScale = fish.state == PlayerState.flying ? -gravityScale : 1;
 
         if (fish.state == PlayerState.walking)
         {
