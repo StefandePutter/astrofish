@@ -15,14 +15,16 @@ public class FishMovement : MonoBehaviour
 
     void Update()
     {
+        rb.gravityScale = fish.state == PlayerState.flying ? -1 : 1;
+
         if (fish.state == PlayerState.walking)
         {
-            
+            if (moveValue != Vector2.zero)
+            {
+                transform.Translate(fish.walkSpeed * Time.deltaTime * moveValue, Space.World);
+            }
         }
-        if (moveValue != Vector2.zero)
-        {
-            transform.Translate(fish.walkSpeed * Time.deltaTime * moveValue, Space.World);
-        }
+        
     }
 
     public void OnMove(InputValue value)
@@ -30,7 +32,6 @@ public class FishMovement : MonoBehaviour
         moveValue = value.Get<Vector2>();
     }
 
-    
 
     public void OnBubble()
     {
@@ -44,7 +45,5 @@ public class FishMovement : MonoBehaviour
             rb.gravityScale = 1;
             fish.state = PlayerState.falling;
         }
-
-        Debug.Log("bubble: " + (fish.walking ? "bubbled" : "not bubbled"));
     }
 }

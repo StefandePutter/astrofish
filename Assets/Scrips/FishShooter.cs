@@ -1,9 +1,11 @@
+using System.Net.Sockets;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
 public class FishShooter : MonoBehaviour
 {
     private Fish Fish;
+    private Rigidbody2D rb;
     [SerializeField] private GameObject WaterShotPrefab;
     [SerializeField] private float fireRate = 1f;
     [SerializeField] private float spawnDistance = 1000f;
@@ -18,7 +20,7 @@ public class FishShooter : MonoBehaviour
 
     void Update()
     {
-        
+        rb = GetComponent<Rigidbody2D>();
     }
 
     private void Shoot() // shoot projectile and delay function
@@ -38,6 +40,9 @@ public class FishShooter : MonoBehaviour
             temp.up = direction;
 
             waterShot = Instantiate(WaterShotPrefab, temp.position, temp.rotation);
+
+            // adding force
+            rb.AddForce(-direction*70);
             
             Destroy(tempObj);
 
@@ -52,13 +57,13 @@ public class FishShooter : MonoBehaviour
 
     public void OnAttack() //set bool to false so shooting can be used
     {
-        if (Fish.isBubbled == false)
+        if (Fish.state == PlayerState.flying)
         {
+            Fish.state = PlayerState.falling;
             Shoot();
         }
         else
         {
-            Fish.isBubbled = false;
             Shoot();
         }
         Debug.Log(Time.time);
