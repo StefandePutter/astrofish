@@ -1,17 +1,24 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+public enum PlayerState
+{
+    walking = 0,
+    flying,
+    falling,
+    finish
+}
+
 public class Fish : MonoBehaviour
 {
     [HideInInspector] public Vector2 mousePos;
-    [HideInInspector] public bool isBubbled;
-    public bool walking;
+    public PlayerState state;
 
     public float walkSpeed = 5f;
 
     void Start()
     {
-        
+        state = PlayerState.walking;
     }
 
     void Update()
@@ -23,7 +30,10 @@ public class Fish : MonoBehaviour
     {
         if (collision.collider.CompareTag("Walkable"))
         {
-            walking = true;
+            if (state == PlayerState.falling) 
+            { 
+                state = PlayerState.walking;
+            }
         }
     }
 
@@ -31,7 +41,10 @@ public class Fish : MonoBehaviour
     {
         if (collision.collider.CompareTag("Walkable"))
         {
-            walking = false;
+            if (state == PlayerState.walking)
+            { 
+                state = PlayerState.falling;
+            }
         }
     }
 
