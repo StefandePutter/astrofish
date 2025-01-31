@@ -16,7 +16,6 @@ public class Enemies : MonoBehaviour
     {
         if (Time.time > attackTimer)
         {
-            Debug.Log("attacking");
             animator.SetTrigger("Attack");
             float nextAttackTime = Random.Range(2, 4);
             attackTimer = Time.time + nextAttackTime;
