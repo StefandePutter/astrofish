@@ -42,7 +42,7 @@ using UnityEngine.InputSystem;
 // spikes
 
 
-public class Input : MonoBehaviour, IDamageable
+public class Input : MonoBehaviour
 {
     public Vector2 mousePos;
 
