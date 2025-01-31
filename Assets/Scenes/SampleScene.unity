@@ -703,8 +703,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WaterShotPrefab: {fileID: 3309510096737438972, guid: 2fa89cff85be4f04fb90b8c6f9a4e065, type: 3}
-  fireRate: 1
-  spawnDistance: 1000
+  fireRate: 0.0001
+  kickback: 1
+  spawnDistance: 1.2
+  IsShooting: 0
 --- !u!114 &1129715020
 MonoBehaviour:
   m_ObjectHideFlags: 0
