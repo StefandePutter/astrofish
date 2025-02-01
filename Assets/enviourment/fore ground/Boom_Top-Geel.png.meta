@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bc1348daeb760174ea00768ada4d52da
+guid: 1c32dff1b5fa9144a8b4bc88a59c45bb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1820429666837602792
-    second: cloud-R_0
+      213: 4255718805592134630
+    second: Boom_Top-Geel_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cloud-R_0
+      name: Boom_Top-Geel_0
       rect:
         serializedVersion: 2
-        x: 1177
-        y: 146
-        width: 689
-        height: 302
+        x: 344
+        y: 0
+        width: 1156
+        height: 560
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8e1207e0327734910800000000000000
-      internalID: 1820429666837602792
+      spriteID: 6e3d447b4b95f0b30800000000000000
+      internalID: 4255718805592134630
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      cloud-R_0: 1820429666837602792
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

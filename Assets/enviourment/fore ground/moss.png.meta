@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: bc1348daeb760174ea00768ada4d52da
+guid: 3cd2625b254f7d14fa82245c83e604c1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1820429666837602792
-    second: cloud-R_0
+      213: -6263006816017299157
+    second: moss_0
+  - first:
+      213: 1189573510918601163
+    second: moss_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cloud-R_0
+      name: moss_0
       rect:
         serializedVersion: 2
-        x: 1177
-        y: 146
-        width: 689
-        height: 302
+        x: 127
+        y: 67
+        width: 291
+        height: 1015
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8e1207e0327734910800000000000000
-      internalID: 1820429666837602792
+      spriteID: b294071db745519a0800000000000000
+      internalID: -6263006816017299157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moss_1
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 34
+        width: 282
+        height: 1036
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc974883ec6328010800000000000000
+      internalID: 1189573510918601163
       vertices: []
       indices: 
       edges: []
@@ -147,8 +172,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      cloud-R_0: 1820429666837602792
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

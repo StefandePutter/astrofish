@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bc1348daeb760174ea00768ada4d52da
+guid: 4a5d6b1bb14d9ff4dbd2031473995733
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1820429666837602792
-    second: cloud-R_0
+      213: -2918204785656007664
+    second: shroom 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cloud-R_0
+      name: shroom 1_0
       rect:
         serializedVersion: 2
-        x: 1177
-        y: 146
-        width: 689
-        height: 302
+        x: 359
+        y: 142
+        width: 1025
+        height: 1018
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8e1207e0327734910800000000000000
-      internalID: 1820429666837602792
+      spriteID: 014f02175347087d0800000000000000
+      internalID: -2918204785656007664
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      cloud-R_0: 1820429666837602792
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

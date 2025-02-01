@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: bc1348daeb760174ea00768ada4d52da
+guid: 8ef0a699bffa3be4baacd21a4fb77113
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1820429666837602792
-    second: cloud-R_0
+      213: -7346732208971919142
+    second: boom top rond_0
+  - first:
+      213: -5277893896871000817
+    second: boom top rond_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cloud-R_0
+      name: boom top rond_0
       rect:
         serializedVersion: 2
-        x: 1177
-        y: 146
-        width: 689
-        height: 302
+        x: 11
+        y: 88
+        width: 1154
+        height: 939
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8e1207e0327734910800000000000000
-      internalID: 1820429666837602792
+      spriteID: ad0de480bf92b0a90800000000000000
+      internalID: -7346732208971919142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom top rond_1
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 946
+        width: 126
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f054dcad67721c6b0800000000000000
+      internalID: -5277893896871000817
       vertices: []
       indices: 
       edges: []
@@ -147,8 +172,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      cloud-R_0: 1820429666837602792
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
