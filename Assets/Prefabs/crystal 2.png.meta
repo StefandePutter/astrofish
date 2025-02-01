@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 5c421ba0c7f45c145a2e64314ee3f465
+guid: ade268cd44927814ab99c43f2aa9895b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5349123717751524650
-    second: takkken_0
-  - first:
-      213: -2177892943707932831
-    second: takkken_1
-  - first:
-      213: -1902192307647473545
-    second: takkken_2
+      213: -5772522172864742936
+    second: crystal 2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -102,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: takkken_0
+      name: crystal 2_0
       rect:
         serializedVersion: 2
-        x: 34
-        y: 1063
-        width: 1416
-        height: 330
+        x: 18
+        y: 21
+        width: 279
+        height: 286
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,52 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a2d42303ea7eb3a40800000000000000
-      internalID: 5349123717751524650
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: takkken_1
-      rect:
-        serializedVersion: 2
-        x: 54
-        y: 621
-        width: 1390
-        height: 277
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 167757b18e196c1e0800000000000000
-      internalID: -2177892943707932831
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: takkken_2
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 151
-        width: 1278
-        height: 243
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7781138ac2e0a95e0800000000000000
-      internalID: -1902192307647473545
+      spriteID: 8e9b45cfaa1e3efa0800000000000000
+      internalID: -5772522172864742936
       vertices: []
       indices: 
       edges: []
@@ -197,10 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      takkken_0: 5349123717751524650
-      takkken_1: -2177892943707932831
-      takkken_2: -1902192307647473545
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

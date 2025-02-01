@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      kastanje_0: 454283897167362910
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
