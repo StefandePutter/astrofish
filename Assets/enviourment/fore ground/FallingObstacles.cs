@@ -24,7 +24,7 @@ public class FallingObstacles : MonoBehaviour
             PlayerState state = collision.collider.GetComponent<Fish>().state;
             if (state == PlayerState.flying)
             {
-                state = PlayerState.falling;
+                collision.collider.GetComponent<Fish>().state = PlayerState.falling;
             }
         }
     }
