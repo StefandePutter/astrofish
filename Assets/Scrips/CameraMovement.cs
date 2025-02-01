@@ -3,20 +3,20 @@ using UnityEngine;
 public class CameraMovement : MonoBehaviour
 {
     private float offset = 3.5f;
-    [SerializeField] private float smoothTime = 0.25f;
+    [SerializeField] private float smoothTime = 6f;
     private Vector3 velocity = Vector3.zero;
 
     [SerializeField] private GameObject player;
     void FixedUpdate()
     {
-        PlayerState state = player.GetComponent<Fish>().state;
-        if (state == PlayerState.falling)
+        Rigidbody2D playerRb = player.GetComponent<Rigidbody2D>();
+        if (playerRb.linearVelocityY <= -5)
         {
-            offset = 0;
+            offset = Mathf.Lerp(offset, 0, 0.25f);
         }
         else
         {
-            offset = 3.5f;
+            offset = offset = Mathf.Lerp(offset, 3.5f, 0.25f);
         }
 
         Vector3 targetPosition = new Vector3(transform.position.x, player.transform.position.y + offset, transform.position.z);

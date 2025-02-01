@@ -863,7 +863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3572455ab80a9ff48ab256949ff6f913, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smoothTime: 0.25
+  smoothTime: 6
   player: {fileID: 1129715012}
 --- !u!1 &529616522
 GameObject:
@@ -3555,6 +3555,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2044451233}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1253390401
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 148013901894903747, guid: a0556f79cc9b23b40a2fbda2c8ea0229, type: 3}
+      propertyPath: m_Name
+      value: Falling Meteor (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2257956580858886881, guid: a0556f79cc9b23b40a2fbda2c8ea0229, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.78554153
+      objectReference: {fileID: 0}
+    - target: {fileID: 2257956580858886881, guid: a0556f79cc9b23b40a2fbda2c8ea0229, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 63.87403
+      objectReference: {fileID: 0}
+    - target: {fileID: 2257956580858886881, guid: a0556f79cc9b23b40a2fbda2c8ea0229, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2257956580858886881, guid: a0556f79cc9b23b40a2fbda2c8ea0229, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2257956580858886881, guid: a0556f79cc9b23b40a2fbda2c8ea0229, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2257956580858886881, guid: a0556f79cc9b23b40a2fbda2c8ea0229, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2257956580858886881, guid: a0556f79cc9b23b40a2fbda2c8ea0229, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2257956580858886881, guid: a0556f79cc9b23b40a2fbda2c8ea0229, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2257956580858886881, guid: a0556f79cc9b23b40a2fbda2c8ea0229, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2257956580858886881, guid: a0556f79cc9b23b40a2fbda2c8ea0229, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a0556f79cc9b23b40a2fbda2c8ea0229, type: 3}
 --- !u!1 &1262632340
 GameObject:
   m_ObjectHideFlags: 0
@@ -4904,7 +4961,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 316
   m_Sprite: {fileID: -2267092766896438279, guid: 5629e51743b0a3e40b305c9d05c0646d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6265,6 +6322,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1032675993880860285, guid: cc9a4ebc517829a418f1ee95e3b192ba, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1032675993880860285, guid: cc9a4ebc517829a418f1ee95e3b192ba, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1032675993880860285, guid: cc9a4ebc517829a418f1ee95e3b192ba, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1032675993880860285, guid: cc9a4ebc517829a418f1ee95e3b192ba, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.3
       objectReference: {fileID: 0}
@@ -6338,3 +6407,4 @@ SceneRoots:
   - {fileID: 5282130917936925906}
   - {fileID: 7289299722057640063}
   - {fileID: 190398855}
+  - {fileID: 1253390401}
