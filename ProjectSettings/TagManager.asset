@@ -5,14 +5,15 @@ TagManager:
   serializedVersion: 3
   tags:
   - Walkable
+  - FallingObjects
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
+  - FallingObject
   - 
   - 
   - 

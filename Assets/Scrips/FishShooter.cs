@@ -7,15 +7,18 @@ public class FishShooter : MonoBehaviour
 {
     private Fish Fish;
     private Rigidbody2D rb;
+    private IEnumerator coroutine;
+    private Animator animator;
 
     [SerializeField] private GameObject WaterShotPrefab;
-    [SerializeField] private float fireRate = 50f;
-    [SerializeField] private float kickback = 5f;
-    [SerializeField] private float spawnDistance = 1.2f;
+    [SerializeField] private float fireRate = 1f;
+    [SerializeField] private float kickback = 10f;
+    [SerializeField] private float spawnDistance = 0.2f;
     [SerializeField] private float executionTime = 0.1f;
 
 
     private float nextFireTime = 0f;
+    private float shotTime = 0f;
 
     [SerializeField] private bool IsShooting = false;
     private bool hasStartedShooting = false;
@@ -26,6 +29,7 @@ public class FishShooter : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         Fish = gameObject.GetComponent<Fish>();
+        animator = gameObject.GetComponent<Animator>();
     }
     void Update()
     {
@@ -33,7 +37,7 @@ public class FishShooter : MonoBehaviour
         if (Fish.state == PlayerState.flying && IsShooting == true)
         {
             Fish.state = PlayerState.falling;
-            Shoot();
+            //Shoot();
             nextFireTime = Time.time + 1f / fireRate;
         }
         else if (IsShooting == true)
@@ -56,14 +60,19 @@ public class FishShooter : MonoBehaviour
             mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
             Vector3 direction = new Vector2(mousePosition.x - transform.position.x, mousePosition.y - transform.position.y);
 
-            temp.up = direction;
+            temp.right = -direction;
+            //temp.Rotate(0, 0, -90f);
 
             Vector3 spawnPosition = transform.position + temp.up * spawnDistance;
 
             waterShot = Instantiate(WaterShotPrefab, spawnPosition, temp.rotation);
 
+            transform.rotation = temp.rotation;
+
+            //transform.Rotate();
+
             // adding force
-            rb.AddForce(-temp.up*kickback);
+            rb.AddForce(temp.right*kickback);
             
             Destroy(tempObj);
 
@@ -77,15 +86,26 @@ public class FishShooter : MonoBehaviour
 
     public void OnAttack() //set bool to false so shooting can be used
     {
+        if (Time.time < shotTime) { return; }
+        if (Fish.state == PlayerState.flying)
+        {
+            Fish.state = PlayerState.falling;
+        }
+
         if (!hasStartedShooting) // Start shooting if it's not already active
         {
             IsShooting = true;
             hasStartedShooting = true;
-            StartCoroutine(ExecuteForTime(executionTime));
+            coroutine = ExecuteForTime(executionTime);
+            StartCoroutine(coroutine);
         }
         else
         {
             IsShooting = false; // Stop shooting if it's already active
+            //StopCoroutine(coroutine);
+            //hasStartedShooting = false;
+
+            shotTime = Time.time + 3f;
         }
     }
 
@@ -105,6 +125,7 @@ public class FishShooter : MonoBehaviour
 
         IsShooting = false; // Stop shooting after the execution time ends
         hasStartedShooting = false;
+        shotTime = Time.time + 2f;
         Debug.Log("Execution time ended.");
     }
 }

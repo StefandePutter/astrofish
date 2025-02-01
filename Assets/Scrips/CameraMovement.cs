@@ -16,7 +16,7 @@ public class CameraMovement : MonoBehaviour
         }
         else
         {
-            offset = offset = Mathf.Lerp(offset, 3.5f, 0.5f);
+            offset = offset = Mathf.Lerp(offset, 3f, 0.5f);
         }
 
         Vector3 targetPosition = new Vector3(transform.position.x, player.transform.position.y + offset, transform.position.z);
