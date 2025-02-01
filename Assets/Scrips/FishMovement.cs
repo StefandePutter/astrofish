@@ -17,12 +17,17 @@ public class FishMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.linearVelocityY = Mathf.Clamp(rb.linearVelocityY, -maxSpeed, maxSpeed);
+        
     }
 
     void Update()
     {
         rb.gravityScale = fish.state == PlayerState.flying ? -gravityScale : 1;
+        // rb.linearVelocityY = Mathf.Clamp(rb.linearVelocityY, -maxSpeed, maxSpeed);
+        if (rb.linearVelocityY >= maxSpeed && fish.state == PlayerState.flying)
+        {
+            rb.gravityScale = 0;
+        }
 
         //Debug.Log(rb.linearVelocity.y);
 
