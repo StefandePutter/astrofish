@@ -12,11 +12,11 @@ public class CameraMovement : MonoBehaviour
         Rigidbody2D playerRb = player.GetComponent<Rigidbody2D>();
         if (playerRb.linearVelocityY <= -5)
         {
-            offset = Mathf.Lerp(offset, 0, 0.25f);
+            offset = Mathf.Lerp(offset, 0, 0.5f);
         }
         else
         {
-            offset = offset = Mathf.Lerp(offset, 3.5f, 0.25f);
+            offset = offset = Mathf.Lerp(offset, 3.5f, 0.5f);
         }
 
         Vector3 targetPosition = new Vector3(transform.position.x, player.transform.position.y + offset, transform.position.z);
