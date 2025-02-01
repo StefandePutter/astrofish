@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      falling_meteor_0: -2971981526454650602
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
