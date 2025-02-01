@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 5619207424124744852}
   - component: {fileID: 4380920256368672759}
   - component: {fileID: 16917311009082227}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Falling Meteor
-  m_TagString: Untagged
+  m_TagString: FallingObjects
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
