@@ -87,6 +87,11 @@ public class FishShooter : MonoBehaviour
     public void OnAttack() //set bool to false so shooting can be used
     {
         if (Time.time < shotTime) { return; }
+        if (Fish.state == PlayerState.flying)
+        {
+            Fish.state = PlayerState.falling;
+        }
+
         if (!hasStartedShooting) // Start shooting if it's not already active
         {
             IsShooting = true;
@@ -97,8 +102,8 @@ public class FishShooter : MonoBehaviour
         else
         {
             IsShooting = false; // Stop shooting if it's already active
-            StopCoroutine(coroutine);
-            hasStartedShooting = false;
+            //StopCoroutine(coroutine);
+            //hasStartedShooting = false;
 
             shotTime = Time.time + 3f;
         }
