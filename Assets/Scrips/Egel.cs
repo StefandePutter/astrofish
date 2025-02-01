@@ -33,7 +33,7 @@ public class Egel : MonoBehaviour
        if (collision.collider.CompareTag("Player"))
        {
             Rigidbody2D rb = collision.collider.GetComponent<Rigidbody2D>();
-            rb.AddForce(new Vector2(500, -1000));
+            rb.AddForce(new Vector2(500, 50));
 
             PlayerState state = collision.collider.GetComponent<Fish>().state;
             if (state == PlayerState.flying)

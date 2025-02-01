@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Enemies : MonoBehaviour
 {
+    [SerializeField] bool facingRight;
     private Animator animator;
     private float attackTimer = 0;
 
@@ -26,6 +27,12 @@ public class Enemies : MonoBehaviour
     {
         if (collision.collider.CompareTag("Player"))
         {
+            float pushback = 500;
+            if (facingRight)
+            {
+                pushback *= -1;
+            }
+
             Rigidbody2D playerRb = collision.collider.GetComponent<Rigidbody2D>();
             playerRb.AddForce(new Vector2(-500,0));
         }
