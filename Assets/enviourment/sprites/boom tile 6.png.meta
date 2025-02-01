@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 222d3544ffaa8f943b848a8fba439715
+guid: f3b3817b457194448901413218e252f7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7826042938354727484
-    second: boom tile 3_0
+      213: -1006509126204373450
+    second: boom tile 6_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,12 +113,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: boom tile 3_0
+      name: boom tile 6_0
       rect:
         serializedVersion: 2
-        x: 472
+        x: 473
         y: 0
-        width: 504
+        width: 503
         height: 1094
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4c58966696f446390800000000000000
-      internalID: -7826042938354727484
+      spriteID: 636466d48492802f0800000000000000
+      internalID: -1006509126204373450
       vertices: []
       indices: 
       edges: []

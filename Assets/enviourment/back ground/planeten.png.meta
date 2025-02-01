@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 222d3544ffaa8f943b848a8fba439715
+guid: 42a4dcff18561fc43818f9a1d2467e81
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7826042938354727484
-    second: boom tile 3_0
+      213: 6443159043120255195
+    second: planeten_0
+  - first:
+      213: -4042865098810997609
+    second: planeten_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: boom tile 3_0
+      name: planeten_0
       rect:
         serializedVersion: 2
-        x: 472
-        y: 0
-        width: 504
-        height: 1094
+        x: 2
+        y: 184
+        width: 809
+        height: 608
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4c58966696f446390800000000000000
-      internalID: -7826042938354727484
+      spriteID: bd0578c2303ba6950800000000000000
+      internalID: 6443159043120255195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeten_1
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 774
+        width: 624
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 794cb86dc9bd4e7c0800000000000000
+      internalID: -4042865098810997609
       vertices: []
       indices: 
       edges: []
