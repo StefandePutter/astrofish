@@ -28,8 +28,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -0.579, y: -3.84, z: -0.68}
-  m_LocalScale: {x: 0.0975457, y: 0.116422944, z: 0.1533835}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.2, y: 0.23870441, z: 0.3144854}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
@@ -56,7 +56,7 @@ ParticleSystem:
   startDelay:
     serializedVersion: 2
     minMaxState: 0
-    scalar: 1.45
+    scalar: 0
     minScalar: 0
     maxCurve:
       serializedVersion: 2

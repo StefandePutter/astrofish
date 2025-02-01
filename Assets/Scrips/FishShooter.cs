@@ -9,9 +9,9 @@ public class FishShooter : MonoBehaviour
     private Rigidbody2D rb;
 
     [SerializeField] private GameObject WaterShotPrefab;
-    [SerializeField] private float fireRate = 50f;
-    [SerializeField] private float kickback = 5f;
-    [SerializeField] private float spawnDistance = 1.2f;
+    [SerializeField] private float fireRate = 1f;
+    [SerializeField] private float kickback = 10f;
+    [SerializeField] private float spawnDistance = 0.2f;
     [SerializeField] private float executionTime = 0.1f;
 
 

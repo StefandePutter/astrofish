@@ -419,7 +419,7 @@ SpriteRenderer:
   m_Size: {x: 5.01, y: 10.99}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &219448026
@@ -2763,10 +2763,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8474a398330f6448ad91cf746c9d356, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WaterShotPrefab: {fileID: 3309510096737438972, guid: 2fa89cff85be4f04fb90b8c6f9a4e065, type: 3}
+  WaterShotPrefab: {fileID: 4403224985823745955, guid: d15f86f4bbb915845a10e9bbd3120e24, type: 3}
   fireRate: 1
   kickback: 10
-  spawnDistance: 1.2
+  spawnDistance: 0.2
   executionTime: 0.1
   IsShooting: 0
 --- !u!114 &1129715020
@@ -3906,7 +3906,7 @@ SpriteRenderer:
   m_Size: {x: 5.01, y: 10.99}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1382021491
