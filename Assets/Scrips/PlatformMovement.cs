@@ -12,7 +12,9 @@ public class PlatformMovement : MonoBehaviour
     void Start()
     {
         scale = transform.localScale.x;
-        offset = offset * (1 + (1-scale));
+        float lastnum = offset + 9.53f;
+        offset = -9.53f * scale + lastnum;
+        //offset = offset * (1 + (1-scale));
     }
 
     // Update is called once per frame
