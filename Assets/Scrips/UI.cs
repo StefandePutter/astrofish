@@ -18,6 +18,6 @@ public class UI : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene("game scene");
+        SceneManager.LoadScene("game scene forest enviourment");
     }
 }

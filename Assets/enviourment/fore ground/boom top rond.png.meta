@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      boom top rond_0: -7346732208971919142
+      boom top rond_1: -5277893896871000817
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

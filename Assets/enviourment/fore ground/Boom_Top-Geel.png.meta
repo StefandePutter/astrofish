@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Boom_Top-Geel_0: 4255718805592134630
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
