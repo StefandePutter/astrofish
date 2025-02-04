@@ -27,14 +27,14 @@ public class Enemies : MonoBehaviour
     {
         if (collision.collider.CompareTag("Player"))
         {
-            float pushback = 500;
+            float pushback = -500;
             if (facingRight)
             {
                 pushback *= -1;
             }
 
             Rigidbody2D playerRb = collision.collider.GetComponent<Rigidbody2D>();
-            playerRb.AddForce(new Vector2(-500,0));
+            playerRb.AddForce(new Vector2(pushback,0));
         }
     }
 }
